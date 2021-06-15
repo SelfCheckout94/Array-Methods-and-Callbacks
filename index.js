@@ -25,9 +25,18 @@ hint - you should be looking at the stage key inside of the objects
 */
 
 function getFinals(data) {
-   /* code here */
+    const teams = data.filter((teams) => {
+      return teams.Stage === "Final" 
+    })
+    
+    // I did not read the question fully and did this extra work and the code below would take the result of teams and boil the array down further to just include the names of the away and home teams
+    // const teamNames = teams.map((names) => {
+    //   return {"Home Team Name": names["Home Team Name"], "Away Team Name": names["Away Team Name"]}
+    // })
+    // return teamNames
+    
+    return teams
 }
-
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
